@@ -4,8 +4,8 @@ import React from "react";
 const Navbar: React.FC = () => {
   return (
     <Flex
-      w="100vw"
-      h="50px"
+      w="100%"
+      h="60px"
       color="#fff"
       bg="#02055A"
       alignItems="center"
@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
           <Avatar size="xs" mr="5px"/>
           <Text fontWeight="600">User</Text>
         </Flex>
-        <Button fontSize="12px" h="30px" bg="#F05E15">
+        <Button fontSize="10px" h="30px" bg="#F05E15">
           Add Property
         </Button>
       </Flex>

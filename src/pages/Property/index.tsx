@@ -1,6 +1,6 @@
 import Property from "../../components/Properties/PropertyListing";
 
-function Props() {
+export function Props() {
     return (
         <Property />
     )}

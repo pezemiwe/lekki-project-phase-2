@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { PublicRoute } from "../components/common";
-import Navbar from "../components/common/Navbar";
+import Layout from "../components/common/Layout";
 import Props from "../pages/Property";
 import { ROUTES } from "./routes";
 
@@ -11,7 +11,7 @@ const AllRoutes = () => (
     <Route
       element={
         <PublicRoute>
-          <Navbar />
+          <Layout />
         </PublicRoute>
       }
     >
