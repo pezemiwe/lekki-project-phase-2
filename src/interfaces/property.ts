@@ -17,102 +17,33 @@ export interface PropertyImage {
   updatedDate: Date;
 }
 
-export interface PropertyChangeRequest {
-  id: string;
+export interface AddProperty {
 
-  property: Property;
-
-  propertyChange: PropertyChange;
-
-  propertyChangeRequestMessages: PropertyChangeRequestmessage[];
-
-  title: string;
-
-  description: string;
-
-  done: boolean;
-
-  createdDate: Date;
-
-  updatedDate: Date;
-}
-
-export interface PropertyChangeRequestmessage {
-  id: string;
-
-  propertyChangeRequest: PropertyChangeRequest;
-
-  message: string;
-
-  createdDate: Date;
-
-  updatedDate: Date;
-}
-
-export interface PropertyMilestone {
-  id: string;
-
-  property: Property;
-
-  tile: string;
-
-  description: string;
-
-  percentage: number;
-
-  createdDate: Date;
-
-  updatedDate: Date;
-}
-
-export interface PropertyChange {
-  id: string;
-
-  property: Property;
-
-  propertyChangeRequests: PropertyChangeRequest[];
-
-  name: string;
+  propertyOwner: string;
 
   address: string;
 
-  state: string;
-
-  bannerUrl: string;
-
   description: string;
 
-  threeDUrl: string;
+  type: string;
 
-  videoUrl: string;
+  bathroom: number;
 
-  floorPlanUrl: string;
+  bedroom: number;
 
-  longitude: string;
+  kitchen: number;
 
-  latitude: string;
+  toilet: number;
 
-  canBuy: boolean;
+  sittingRoom: number;
 
-  canRent: boolean;
+  validFrom: Date;
 
-  price: number;
-
-  rentPrice: number;
-
-  canPayFull: boolean;
-
-  canPayInstallment: boolean;
-
-  canMortgage: boolean;
-
-  category: string;
-
-
-  createdDate: Date;
-
-  updatedDate: Date;
+  validTo: Date;
+  
+  images: PropertyImage[];
 }
+
 
 export interface Property {
 

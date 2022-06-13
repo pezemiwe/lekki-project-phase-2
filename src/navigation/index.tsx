@@ -1,6 +1,5 @@
 import PropertyDetailsPage from "pages/Details";
-import * as React from "react";
-
+import Form from "pages/Form";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { PublicRoute } from "../components/common";
 import Layout from "../components/common/Layout";
@@ -18,6 +17,7 @@ const AllRoutes = () => (
     >
       <Route path={ROUTES.home} element={<Props />} />
       <Route path={ROUTES.details} element={<PropertyDetailsPage />} />
+      <Route path={ROUTES.form} element={<Form />} />
     </Route>
   </Routes>
 );
