@@ -8,5 +8,5 @@ export const getProperties = async (query = '') => {
 
 export const getProperty = async (id: string) => {
     const response = await axiosClient.get(`/v1/lekki/property/${id}`);
-    return response.data;
+    return response.data?.data;
 }

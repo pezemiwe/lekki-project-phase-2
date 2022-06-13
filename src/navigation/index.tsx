@@ -1,3 +1,4 @@
+import PropertyDetailsPage from "pages/Details";
 import * as React from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -16,6 +17,7 @@ const AllRoutes = () => (
       }
     >
       <Route path={ROUTES.home} element={<Props />} />
+      <Route path={ROUTES.details} element={<PropertyDetailsPage />} />
     </Route>
   </Routes>
 );

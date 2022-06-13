@@ -115,7 +115,8 @@ export interface PropertyChange {
 }
 
 export interface Property {
-  id: string;
+
+  _id: string;
 
   type: string;
 
