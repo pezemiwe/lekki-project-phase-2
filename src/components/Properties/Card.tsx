@@ -5,22 +5,33 @@ import { GoLocation, GoPerson } from "react-icons/go";
 import { FaBed, FaShower, FaToilet, FaChair } from "react-icons/fa";
 import { MdKitchen } from "react-icons/md";
 import truncate from "truncate";
+import NoImage from "../../assets/images/no-image.png";
+import { RoutesFunctions } from "navigation/routes";
+import { useNavigate } from "react-router-dom";
 
 export const Card: React.FC<{
   property: Property;
 }> = ({ property }) => {
+
+const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(RoutesFunctions.singleProperty(property._id));
+  }
   return (
     <Flex
       h="370px"
       p="10px"
       bg="#FFFFFF"
       flexDirection="column"
-      fontSize="18px"
+      fontSize="16px"
       color="#02055A"
       boxShadow="0px 8px 16px rgba(96, 97, 112, 0.16)"
+      cursor="pointer"
+      onClick={handleClick}
     >
       <Image
-        src={property?.images?.[0]?.path}
+        src={property?.images?.[0]?.path || NoImage}
         alt={property?.images?.[0]?.originalname}
         w="100%"
         h="250px"

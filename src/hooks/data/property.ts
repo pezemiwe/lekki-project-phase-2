@@ -1,4 +1,4 @@
-import { getProperties, getProperty } from 'api/lib/property';
+import { getProperties, getProperty } from '../../api/lib/property';
 import { Property } from 'interfaces/property';
 import { useQuery } from 'react-query';
 import { PROPERTIES, PROPERTY } from 'utils/queryPaths';
