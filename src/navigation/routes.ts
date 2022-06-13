@@ -5,6 +5,7 @@ export const ROUTES = {
   login: '/login',
   signup: '/signup',
   details: '/details/:id',
+  form: '/form',
 };
 
 export const RoutesFunctions = {
